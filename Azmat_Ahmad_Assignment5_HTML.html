@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empkoyee Registration Form</title>
+</head>
+<body>
+    <h1><font face="New Roman Times" size="6"> Employee Registration Form</font></h1>
+    <form action="xyz.php" method="get">
+     <fieldset>
+        <legend>Personel Information</legend>
+        First_Name*: <br>
+        <input type="text" name="firstname" value="Enter Your firstName" required><br><br>
+        Last_Name*: <br>
+        <input type="text" name="lastname" value="Enter Your lastname" required><br><br>
+        Address*: <br>
+        <input type="text" name="Address" value="Enter Your Name" required><br><br>
+        phone_Number* : <br>
+        <input type="tel" name="phone_number" value="9080756464" required> <br><br>
+        Email* : <br>
+        <input type="email" name="email" value="abc@gmail.com"> <br><br>
+        Password* : <br>
+        <input type="Password" name="Password" > <br><br>
+        D.O.B.* : <br>
+        <input type="date" name="DOB" required> <br><br> 
+        Gender* : 
+        <input type="radio" name="gender" value="Male" checked>Male
+        <input type="radio" name="gender" value="Female">Female
+     </fieldset>
+     <fieldset>
+        <legend>Education Qualification</legend>
+        SSC Percentage : <br>
+        <input type="number" name="Percentage" value="00" required min="0" max="100"><br><br>
+        HSC Percentage : <br>
+        <input type="number" name="Percentage" value="00" required min="0" max="100"><br><br>
+        Graduation Percentage : <br>
+        <input type="number" name="Percentage" value="00" required min="0" max="100"><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Extra Information</legend>
+        Upload Your Cv: <br>
+        <input type="file" name="Cv" value="CV"><br><br>
+        Select Perferred Location : <br>
+        <select name="Location" value="location">
+            <option value="Punjab">Punjab</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Hyderbad" selected>Hyderabad</option>
+            <option value="Bangalore">Bangalore</option>
+        </select>
+    </fieldset><br>
+    Agree with all Terms and Conditions* : 
+    <input type="checkbox" ><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
